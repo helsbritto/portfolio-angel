@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #e8f4ea; 
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #7fb587; 
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #6a6a6a;
+}
+
+/* Seções */
+section {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #7fb587;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #6a6a6a;
+}
+
+/* Sobre Mim */
+.about-me {
+    text-align: center;
+}
+
+/* Resumo e Skills */
+.resume-skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaço entre as colunas */
+    margin-bottom: 40px; /* Espaço abaixo da seção */
+}
+
+.resume, .skills {
+    flex: 1; /* Divide o espaço igualmente entre as colunas */
+}
+
+.resume h2, .skills h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7fb587;
+    margin-bottom: 15px;
+}
+
+.resume ul, .skills ul {
+    list-style: none; /* Remove os pontos das listas */
+    padding: 0;
+    margin: 0;
+}
+
+.resume ul li, .skills ul li {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    background-color: transparent; /* Remove o fundo branco */
+    padding: 0; /* Remove o padding */
+    box-shadow: none; /* Remove a sombra */
+}
+
+/* Centralização do Demo Reel e Vídeo */
+.demo-reel,
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.demo-reel iframe,
+.video iframe {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* Portfólio */
+.portfolio-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #7fb587;
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
+}
+
+.portfolio img {
+    width: 150px; /* Tamanho fixo para as imagens */
+    height: 150px; /* Tamanho fixo para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio img:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d4e8d7;
+    color: #4a4a4a; 
+    margin-top: 60px;
+}
+
+/* Links */
+a {
+    color: #7fb587;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #689970;
+}
+
+/* Botões */
+.button {
+    background-color: #7fb587;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #689970;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .resume-skills {
+        flex-direction: column; /* Coloca as colunas uma abaixo da outra em dispositivos móveis */
+    }
+
+    .portfolio {
+        flex-direction: row; /* Mantém as imagens lado a lado mesmo em dispositivos móveis */
+        gap: 10px; /* Reduz o espaço entre as imagens */
+    }
+
+    .portfolio img {
+        width: 100px; /* Tamanho menor para dispositivos móveis */
+        height: 100px;
+    }
+}
