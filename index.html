@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Design de Animação</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Cabeçalho -->
@@ -13,58 +15,166 @@
             <h1>Angelina Britto</h1>
             <p>Designer de Animação</p>
         </header>
-
         <!-- Sobre Mim -->
         <section class="about-me">
             <h2>˖⁺‧₊˚⟡ Sobre Mim ✧˚₊‧⁺˖</h2>
-            <p>Olá! Aqui é Angelina Britto, designer de animação pela Belas Artes e apaixonada por criar animações cheias de técnicas e muitos significados! Minha jornada começou em 2023, e desde então venho trabalhando em projetos desafiadores e inspiradores.</p>
-        </section>
+            <p>🎨 Olá! Eu sou a Angelina Britto, Designer formada pela Belas Artes e apaixonada por dar forma e
+                significado às ideias. Desde 2023, venho explorando o universo do Design, criando projetos cheios de
+                criatividade e propósito. Gosto de desafios e de transformar conceitos em visuais que fazem a diferença.
+                Vamos criar algo incrível juntos? 🚀
+            
+            </p>
 
-        <!-- Resumo -->
-        <section class="resume">
-            <h2>Resumo</h2>
-            <ul>
-                <li>Educação: Design de Animação - Belas Artes (2023-2024)</li>
-                <li>Experiência: Designer em Tal Lugar (2018 - Presente)</li>
-                <li>Habilidades: Design Gráfico, Motion Design, UI/UX</li>
-            </ul>
-        </section>
+            <!-- Resumo e Skills -->
+            <div class="resume-skills">
+                <div class="resume">
+                    <h3>Educação</h3>
+                    <p>Design de Animação (Belas Artes)</p>
+                    <p>Gestão de Mídias Sociais Digitais (UFMS)</p>
+                </div>
 
-        <!-- Portfólio -->
-        <section class="portfolio-container">
-            <h2 class="portfolio-title">Portfólio</h2>
-            <div class="portfolio">
-                <img src="arte1.jpeg" alt="Arte 1">
-                <img src="arte2.jpeg" alt="Arte 2">
-                <img src="arte3.jpeg" alt="Arte 3">
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <p>Design Gráfico</p>
+                    <p>Motion Design</p>
+                    <p>Animação 2D</p>
+                    <p>Ilustração Digital</p>
+                    <p>Modelagem 3D</p>
+                    <p>Branding</p>
+                    <p>Marketing Digital</p>
+                </div>
             </div>
         </section>
 
-        <!-- Demo Reel -->
-        <section class="demo-reel">
-            <h2>Demo Reel</h2>
+        <div class="portfolio-categories">
+            <button class="category-btn" data-category="personagem">Criação de Personagens</button>
+            <button class="category-btn" data-category="cenario">Cenários</button>
+            <button class="category-btn" data-category="animacoes">Animações Independentes</button>
+            <button class="category-btn" data-category="ilustracoes">Ilustrações Independentes</button>
+        </div>
+
+        <div id="personagem" class="portfolio-grid">
+            <div class="portfolio-item"><img src="1.jpeg" alt="Personagem 1"></div>
+            <div class="portfolio-item"><img src="2.jpeg" alt="Personagem 2"></div>
+            <div class="portfolio-item"><img src="3.jpeg" alt="Personagem 3"></div>
+            <div class="portfolio-item"><img src="4.jpeg" alt="Personagem 4"></div>
+            <div class="portfolio-item"><img src="5.jpeg" alt="Personagem 5"></div>
+            <div class="portfolio-item"><img src="6.jpeg" alt="Personagem 6"></div>
+            <div class="portfolio-item"><img src="7.jpeg" alt="Personagem 7"></div>
+            <div class="portfolio-item"><img src="8.jpeg" alt="Personagem 8"></div>
+            <div class="portfolio-item"><img src="9.jpeg" alt="Personagem 9"></div>
+            <div class="portfolio-item"><img src="10.jpeg" alt="Personagem 10"></div>
+        </div>
+
+        <div id="cenario" class="portfolio-grid">
+            <div class="portfolio-item"><img src="11.jpeg" alt="Cenário 1"></div>
+            <div class="portfolio-item"><img src="12.jpeg" alt="Cenário 2"></div>
+            <div class="portfolio-item"><img src="13.jpeg" alt="Cenário 3"></div>
+            <div class="portfolio-item"><img src="14.jpeg" alt="Cenário 4"></div>
+            <div class="portfolio-item"><img src="15.jpeg" alt="Cenário 5"></div>
+            <div class="portfolio-item"><img src="16.jpeg" alt="Cenário 6"></div>
+            <div class="portfolio-item"><img src="17.jpeg" alt="Cenário 7"></div>
+            <div class="portfolio-item"><img src="18.jpeg" alt="Cenário 8"></div>
+        </div>
+
+        <div id="cenario-video" class="portfolio-grid">
+            <h3>Projeto No Alto de São Paulo</h3>
+            <p>Animação Universitária Premiado Noite de Gala Belas Artes como “Melhor Animação 2D 2024”</p>
             <video controls>
-                <source src="demo-reel.mp4" type="video/mp4">
+                <source src="noalto.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
+        </div>
+
+        <div id="animacoes" class="portfolio-grid">
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="animacao1.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="animacao2.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="animacao3.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </div>
+
+        <div id="ilustracoes" class="portfolio-grid">
+            <div class="portfolio-item"><img src="19.jpeg" alt="Ilustração 1"></div>
+            <div class="portfolio-item"><img src="20.jpeg" alt="Ilustração 2"></div>
+            <div class="portfolio-item"><img src="21.jpeg" alt="Ilustração 3"></div>
+            <div class="portfolio-item"><img src="22.jpeg" alt="Ilustração 4"></div>
+            <div class="portfolio-item"><img src="23.jpeg" alt="Ilustração 5"></div>
+            <div class="portfolio-item"><img src="24.jpeg" alt="Ilustração 6"></div>
+            <div class="portfolio-item"><img src="25.jpeg" alt="Ilustração 7"></div>
+            <div class="portfolio-item"><img src="26.jpeg" alt="Ilustração 8"></div>
+        </div>
+
+        <!-- Modal para exibir imagens em tamanho maior -->
+        <div id="image-modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+        </div>
+
+        <!-- Contatos -->
+        <section class="contacts">
+            <h2>Contatos</h2>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/angelina-britto" target="_blank">www.linkedin.com/in/angelina-britto</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/artbyangelbcs?igsh=OW4yOHN2cWt6OGUx&utm_source=qr" target="_blank">https://www.instagram.com/artbyangelbcs</a></p>
+            <p>Email: <a href="mailto:angelbcs1401@gmail.com">angelbcs1401@gmail.com</a></p>
         </section>
 
-        <!-- Skills -->
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Design Gráfico</li>
-                <li>Motion Design</li>
-                <li>UI/UX Design</li>
-                <li>Branding</li>
-                <li>Ilustração Digital</li>
-            </ul>
-        </section>
+        <!-- Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const buttons = document.querySelectorAll('.category-btn');
+                const grids = document.querySelectorAll('.portfolio-grid');
+                const modal = document.getElementById('image-modal');
+                const modalImg = document.getElementById('modal-img');
+                const closeModal = document.getElementsByClassName('close')[0];
+
+                buttons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        buttons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+
+                        grids.forEach(grid => grid.style.display = 'none');
+                        document.getElementById(button.getAttribute('data-category')).style.display = 'grid';
+                    });
+                });
+
+                document.querySelectorAll('.portfolio-item img').forEach(img => {
+                    img.addEventListener('click', () => {
+                        modal.style.display = 'block';
+                        modalImg.src = img.src;
+                    });
+                });
+
+                closeModal.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                });
+
+                window.addEventListener('click', (event) => {
+                    if (event.target == modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2025 Angelina Britto. Todos os direitos reservados.</p>
+        </footer>
     </div>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Angelina Britto. Todos os direitos reservados.</p>
-    </footer>
 </body>
+
 </html>
